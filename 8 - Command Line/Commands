@@ -1,0 +1,74 @@
+ls  : list
+    Shows folders structure
+
+cd  : change directory
+
+~   : home folder
+
+clear   : clear command line
+mkdir   : Make new directory (folder)
+touch   : Make new file
+
+cp  : copy file to another directory
+    ex - copy app.js ..
+        copy app.js to parent directory
+
+mv  : move file
+    same as cp
+
+rm      : delete files
+rm -r   : delete director (folder)
+
+open app.js                 : open app.js with default program
+open -a "app name" app.js   : open app.js with "app name" program
+
+
+GIT AND GITHUB Work Flow
+    must be in git folder to perform any git commands
+
+1   -   git --version
+            check if computer has git installed, if so which version
+
+2   -   copy repository from github
+
+3   -   git clone "git hub repository"
+
+4   -   copy files into newly made git folder
+
+5   -   git status
+            Shows Untracked files (files that haven't been committed yet)
+
+6   -   git add "Untracked filed name"
+
+7   -   git status
+            check status again to see if all intended files are ready to be committed
+
+8   -   git commit -m "message for team to know what this commit changed"
+
+9   -   git push
+            pushes files onto github repository
+            MIGHT ASK FOR GITHUB LOG IN
+
+10  -   git pull
+            pulls most up-to-date code/changes to your end
+
+
+Creating BRANCHES from master 
+
+1   -   git branch
+            shows what branches you have    
+
+2   -   git branch testingFeatures
+            makes testingFeatures branch
+
+3   -   git checkout 'testingFeatures'
+            switches to branch 'testingFeatures'
+
+4   -   git add .
+            add all changes
+5   -   git status
+6   -   git commit -m "Adding testing features"
+7   -   git push
+
+8   -   you then can create a pull request with comments to your commit
+9   -   if testingFeatures is approved, it can be MERGED to the master by someone on the team
